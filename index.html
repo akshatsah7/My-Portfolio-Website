@@ -4,386 +4,609 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Akshat Sah</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Akshat Sah</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+  <body class="main-content">
+    <header class="container header active" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="img/hero.png" alt="" />
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-      <button id="toggle-dark-mode">
-        <i class="fa-solid fa-circle-half-stroke" style="color: #5e6664"></i>
-      </button>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Akshat profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Akshat Sah</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/akshat-sah'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/akshatsah7'"
-          />
+        <div class="right-header">
+          <h1 class="name">
+            Hi, I'm <span>Akshat Sah.</span>
+            A Front-End Web Developer.
+          </h1>
+          <p>
+            Hi there! I'm a front-end developer on a mission to blend
+            cutting-edge design with flawless functionality. Specializing in
+            crafting responsive and dynamic websites, I thrive on bringing ideas
+            to life in the digital realm.
+          </p>
+          <div class="btn-con">
+            <a href="" class="main-btn">
+              <span class="btn-text">Download CV</span>
+              <span class="btn-icon"><i class="fas fa-download"></i></span>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+    </header>
+    <main>
+      <section class="container about" id="about">
+        <div class="main-title">
+          <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ year <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech. Computer Science Engineering</p>
+        <div class="about-container">
+          <div class="left-about">
+            <h4>Information About me</h4>
+            <p>
+              I'm Akshat Sah, a passionate frontend developer currently pursuing
+              my Bachelor's degree in Computer Science Engineering at Heritage
+              Institute of Technology, Kolkata. With a keen eye for design and a
+              love for crafting user-friendly experiences, I specialize in
+              creating dynamic and engaging web applications. Whether it's
+              bringing mockups to life or optimizing performance, I thrive on
+              turning ideas into elegant solutions.
+            </p>
+            <div class="btn-con">
+              <a href="#" class="main-btn">
+                <span class="btn-text">Download CV</span>
+                <span class="btn-icon"><i class="fas fa-download"></i></span>
+              </a>
             </div>
           </div>
-          <div class="text-container">
+          <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">7+</p>
+                <p class="small-text">
+                  Projects <br />
+                  Completed
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">1+</p>
+                <p class="small-text">
+                  Year of <br />
+                  Journey
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <h4 class="stat-title">My Skills</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">html</p>
+              <div class="progress-con">
+                <p class="prog-text">90%</p>
+                <div class="progress">
+                  <span class="html"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">css</p>
+              <div class="progress-con">
+                <p class="prog-text">85%</p>
+                <div class="progress">
+                  <span class="css"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">javascript</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span class="js"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">ReactJS</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span class="react"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">java</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span class="java"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">c</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span class="c"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">c++</p>
+              <div class="progress-con">
+                <p class="prog-text">60%</p>
+                <div class="progress">
+                  <span class="cpp"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">sql</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span class="sql"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="stat-title">Project Timeline</h4>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2024 - MAR</p>
+            <h5>
+              Cartify Ecommerce<br /><span>
+                - ReactJS | Redux | Firebase | TailwindCSS</span
+              >
+            </h5>
             <p>
-              Hey there! I'm Akshat Sah, a passionate frontend developer
-              currently pursuing my Bachelor's degree in Computer Science
-              Engineering at Heritage Institute of Technology, Kolkata. With a
-              keen eye for design and a love for crafting user-friendly
-              experiences, I specialize in creating dynamic and engaging web
-              applications. Whether it's bringing mockups to life or optimizing
-              performance, I thrive on turning ideas into elegant solutions.
+              React-based e-commerce platform leveraging Redux for state
+              management and Tailwind CSS for stunning UI. Backed by Firebase
+              for a blazing-fast database and authentication, it offers seamless
+              login via Firebase Auth. Material UI adds elegance to every
+              detail. Welcome to the future of online shopping.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2024 - FEB</p>
+            <h5>
+              Netflix Clone<br /><span>
+                - ReactJS | Firebase | TailwindCSS</span
+              >
+            </h5>
+            <p>
+              It is a full-stack web application that mirrors the functionality
+              and user experience of Netflix. It's crafted with React.js for the
+              frontend, Tailwind CSS for styling, and Firebase for the backend.
+              Users can sign up, log in, browse through diverse movie
+              categories, and curate their favorite collection seamlessly.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2024 - JAN</p>
+            <h5>
+              BlitzBuys Ecommerce<br /><span>
+                - HTML | CSS | JavaScript | ReactJS</span
+              >
+            </h5>
+            <p>
+              Developed an e-commerce website with HTML, CSS, and JavaScript,
+              leveraging React for enhanced interactivity. Users can seamlessly
+              view, sort, add to cart, search, and checkout, showcasing a
+              dynamic front-end experience and comprehensive e-commerce
+              functionality.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2023 - NOV</p>
+            <h5>
+              Social Media<br /><span>
+                - HTML | CSS | JavaScript | ReactJS</span
+              >
+            </h5>
+            <p>
+              Developed a currency website with React, allowing users to create,
+              upload, delete, and view posts. Seamlessly integrating HTML, CSS,
+              and JavaScript, this project showcases dynamic functionality
+              alongside a user-friendly interface.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2023 - JULY</p>
+            <h5>
+              Currency Converter<br /><span> - HTML | CSS | JavaScript</span>
+            </h5>
+            <p>
+              Built a currency website with HTML, CSS, and JavaScript, featuring
+              live exchange rates from an external API. Dynamic animations add
+              visual flair, demonstrating front-end expertise and real-time data
+              integration.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2023 - MAY</p>
+            <h5>
+              Rock Paper Scissors<br /><span> - HTML | CSS | Javascript</span>
+            </h5>
+            <p>
+              Developed a dynamic rock-paper-scissors game website using HTML,
+              CSS, and JavaScript, allowing users to play against the computer.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2023 - MAR</p>
+            <h5>Amazon Homepage<br /><span> - HTML | CSS</span></h5>
+            <p>
+              Replicated Amazon's homepage using HTML/CSS, mirroring its layout,
+              styling, and interactive features. Demonstrates precise front-end
+              skills and attention to detail.
             </p>
           </div>
         </div>
+      </section>
+      <section class="container" id="portfolio">
+        <div class="main-title">
+          <h2>My <span>Projects</span><span class="bg-text">My Work</span></h2>
+        </div>
+        <p class="port-text">
+          Here is some of my projects that I've done in various technologies.
+        </p>
+        <div class="portfolios">
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port1.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Cartify Ecommerce</h3>
+              <div class="icons">
+                <a
+                  href="https://github.com/akshatsah7/Cartify-Ecommerce"
+                  class="icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://cartify-ecommerce-alpha.vercel.app/"
+                  class="icon"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port2.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Netflix Clone</h3>
+              <div class="icons">
+                <a href="https://github.com/akshatsah7/netflix" class="icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://streamease.vercel.app/" class="icon">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port3.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Currency Converter</h3>
+              <div class="icons">
+                <a
+                  href="https://github.com/akshatsah7/currency-converter"
+                  class="icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://akshatsah7.github.io/currency-converter/"
+                  class="icon"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port4.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Social Media</h3>
+              <div class="icons">
+                <a
+                  href="https://github.com/akshatsah7/social-media"
+                  class="icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://social-media-react1.vercel.app/" class="icon">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port5.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Amazon Homepage Clone</h3>
+              <div class="icons">
+                <a
+                  href="https://github.com/akshatsah7/amazon-homepage"
+                  class="icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://akshatsah7.github.io/amazon-homepage/"
+                  class="icon"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port6.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Rock Paper Scissors</h3>
+              <div class="icons">
+                <a
+                  href="https://github.com/akshatsah7/rock-paper-scissors"
+                  class="icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://akshatsah7.github.io/rock-paper-scissors/"
+                  class="icon"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port7.png" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>BlitzBuys Ecommerce</h3>
+              <div class="icons">
+                <a href="https://github.com/akshatsah7/BlitzBuys" class="icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://blitz-buys.vercel.app/" class="icon">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container contact" id="contact">
+        <div class="contact-container">
+          <div class="main-title">
+            <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+          </div>
+          <div class="contact-content-con">
+            <div class="left-contact">
+              <h4>Contact me here</h4>
+              <p>
+                Feel free to connect! Whether discussing projects, networking,
+                or just saying hello, I'm reachable via email, phone, or
+                LinkedIn. Let's chat and see how we can collaborate to reach our
+                goals.
+              </p>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location</span>
+                  </div>
+                  <p>Kolkata, India</p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                  </div>
+                  <p>
+                    <span>akshatsah63@gmail.com</span>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Education</span>
+                  </div>
+                  <p>
+                    <span>BTech, CSE, HIT Kolkata</span>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    <span>Mobile Number</span>
+                  </div>
+                  <p>
+                    <span>+91 7003777745</span>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-globe-asia"></i>
+                    <span>Languages</span>
+                  </div>
+                  <p>
+                    <span>English, Hindi, Bengali</span>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-icons">
+                <div class="contact-icon">
+                  <a
+                    href="https://www.linkedin.com/in/akshatsah/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/akshatsah7" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:akshatsah63@gmail.com" target="_blank">
+                    <i class="far fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="right-contact">
+              <form action="#" class="contact-form" id="contactForm">
+                <div class="input-control i-c-2">
+                  <input
+                    type="text"
+                    required
+                    placeholder="YOUR NAME"
+                    id="name"
+                  />
+                  <input
+                    type="email"
+                    required
+                    placeholder="YOUR EMAIL"
+                    id="email"
+                  />
+                </div>
+                <div class="input-control">
+                  <input
+                    type="text"
+                    required
+                    placeholder="ENTER SUBJECT"
+                    id="subject"
+                  />
+                </div>
+                <div class="input-control">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="15"
+                    rows="8"
+                    placeholder="Message Here..."
+                  ></textarea>
+                </div>
+                <div class="submit-btn">
+                  <a href="#" class="main-btn" onclick="sendEmail()">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon"
+                      ><i class="fas fa-paper-plane"></i
+                    ></span>
+                  </a>
+                </div>
+              </form>
+            </div>
+
+            <script>
+              function sendEmail() {
+                // Fetch input values
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+
+                // Prepare email body
+                var body = "Name: " + name + "\n";
+                body += "Email: " + email + "\n";
+                body += "Subject: " + subject + "\n";
+                body += "Message: " + message;
+
+                // Send email (You need to implement the email sending function)
+                // Example using mailto: link (opens default email client)
+                window.location.href =
+                  "mailto:akshatsah63@gmail.com?subject=" +
+                  encodeURIComponent(subject) +
+                  "&body=" +
+                  encodeURIComponent(body);
+              }
+            </script>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="controls">
+      <div class="control active-btn" data-id="home">
+        <i class="fas fa-home"></i>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frameworks/Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ReactJS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Redux</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitHub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+      <div class="control" data-id="about">
+        <i class="fas fa-user"></i>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/akshatsah7/BlitzBuys'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://blitz-buys.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/akshatsah7/social-media'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://social-media-react1.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/akshatsah7/currency-converter'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://akshatsah7.github.io/currency-converter/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="control" data-id="portfolio">
+        <i class="fas fa-briefcase"></i>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:examplemail@gmail.com">akshatsah63@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://linkedin.com/in/akshat-sah">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/phone.png"
-            alt="Phone icon"
-            class="icon contact-icon phone"
-          />
-          <p><a href="tel:+917003777745">+91 7003777745</a></p>
-        </div>
+      <div class="control" data-id="contact">
+        <i class="fas fa-envelope-open"></i>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Akshat Sah. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+    <div class="theme-btn">
+      <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
